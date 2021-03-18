@@ -1,0 +1,45 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 32px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+    margin: 1rem;
+}
+
+#tabs ul {
+  display: flex;
+  flex-direction: row;
+}
+
+#tabs li {
+  margin: 0 1rem;
+}
+
+img{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
