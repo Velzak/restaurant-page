@@ -3,7 +3,10 @@ function createHeader(id, text) {
   const header = document.createElement("header");
   header.setAttribute("id", id);
   const logo = document.createElement("h1");
-  logo.textContent = text;
+  const a = document.createElement('a')
+  a.href = '#'
+  a.textContent = text;
+  logo.appendChild(a)
   header.appendChild(logo);
   return header;
 }

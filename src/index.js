@@ -1,3 +1,9 @@
 import loadPage from './modules/initalLoad'
+import loadHome from './modules/homePage'
 
-loadPage()
+init()
+
+function init(){
+    loadPage()
+    loadHome()
+}
