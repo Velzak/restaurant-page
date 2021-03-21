@@ -24,11 +24,10 @@ body {
 
 #content {
   height: 100%;
-  
 }
 
-@media screen and (min-width: 812px){
-  #content{
+@media screen and (min-width: 812px) {
+  #content {
     width: 100%;
   }
 }
@@ -100,6 +99,7 @@ footer {
   height: 90vh;
   width: 100%;
   color: white;
+  line-height: 4rem;
 }
 
 #details h2 {
@@ -125,7 +125,7 @@ footer {
   border-radius: 0.25rem;
   border: none;
   color: white;
-  background: rgba(110, 122, 155, 0.623);
+  background: rgb(68, 92, 109);
   padding: 1rem 2rem;
   margin: 1rem;
 }
@@ -140,13 +140,63 @@ footer {
   padding: 3rem 0;
   background: rgb(65, 77, 87);
   color: white;
+  line-height: 2rem;
 }
 
-
-#para p{
+#para p {
   padding: 0 1rem;
   font-weight: 300;
 }
+
+/******************************************
+/* MENU TAB
+/*******************************************/
+
+#menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem;
+  text-align: center;
+}
+
+#menu-content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 600px;
+  line-height: 2rem;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  font-weight: 500;
+  
+}
+
+.menu-item h4{
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+
+.menu-item p {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
