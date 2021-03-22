@@ -69,7 +69,7 @@ a:visited {
 
 #main {
   width: 100%;
-  background: rgb(252, 245, 237);
+  background: rgb(9,10,14);;
 }
 
 footer {
@@ -152,14 +152,17 @@ footer {
 /* MENU TAB
 /*******************************************/
 
+
 #menu-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin: 1rem;
+  padding: 2rem;
+  margin: 0 2rem;
   text-align: center;
+  color: white;
 }
 
 #menu-content h2 {
@@ -192,9 +195,9 @@ footer {
 .menu-item p {
   font-size: 18px;
   font-weight: 400;
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 0 1rem 0;
   margin-bottom: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 /******************************************

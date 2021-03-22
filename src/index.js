@@ -6,6 +6,6 @@ init()
 
 function init(){
     loadPage()
-    loadHome()
+    // loadHome()
     loadMenu()
 }
