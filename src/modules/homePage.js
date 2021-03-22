@@ -26,13 +26,6 @@ function createLink(id, src, text){
     return href
 }
 
-function createImg(id, src){
-    const img = document.createElement('img')
-    img.setAttribute('id', id)
-    img.src = src
-    return img
-}
-
 function loadHome(){
     const main = document.querySelector('#main')
 
@@ -50,9 +43,6 @@ function loadHome(){
 
     const sectionPara = createSection('para')
     main.appendChild(sectionPara)
-
-    // const img = createImg('img1', '/dist/images/ramen.jpg')
-    // sectionPara.appendChild(img)
 
     const p = createP('basicInfo', 'Inspired by American Cuisine. Built on the principle that food tastes better in larger quantities.  For the vibrant community of Portland.')
     sectionPara.appendChild(p)
