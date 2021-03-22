@@ -3,10 +3,10 @@ function createHeader(id, text) {
   const header = document.createElement("header");
   header.setAttribute("id", id);
   const logo = document.createElement("h1");
-  const a = document.createElement('a')
-  a.href = '#'
+  const a = document.createElement("a");
+  a.href = "#";
   a.textContent = text;
-  logo.appendChild(a)
+  logo.appendChild(a);
   header.appendChild(logo);
   return header;
 }
@@ -17,7 +17,7 @@ function createTabs(id, text) {
 
   li.setAttribute("id", id);
   li.textContent = text;
-  li.classList.add('tab')
+  li.classList.add("tab");
   return li;
 }
 
