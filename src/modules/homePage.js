@@ -18,35 +18,39 @@ function createP(id, text) {
   return p;
 }
 
-function createLink(id, src, text){
-    const href = document.createElement('a')
-    href.setAttribute('id', id)
-    href.href = src
-    href.textContent = text
-    return href
+function createLink(id, text) {
+  const href = document.createElement("a");
+  href.setAttribute("id", id);
+  href.textContent = text;
+  return href;
 }
 
-function loadHome(){
-    const main = document.querySelector('#main')
+function loadHome() {
+  const main = document.querySelector("#main");
 
-    const section = createSection('details')
-    main.appendChild(section)
+  const section = createSection("details");
+  main.appendChild(section);
 
-    const heading = createHeading('arlo', 'Not Just Another Ramen Bar')
-    section.appendChild(heading)
+  const detailSection = createSection("detailSection");
+  section.appendChild(detailSection);
 
-    const tagline = createP('tagline', 'Tagline Goes Here!')
-    section.appendChild(tagline)
+  const heading = createHeading("arlo", "Not Just Another Ramen Bar");
+  detailSection.appendChild(heading);
 
-    const orderLink = createLink('order', '#', 'Order Now')
-    section.appendChild(orderLink)
+  const tagline = createP("tagline", "Tagline Goes Here!");
+  detailSection.appendChild(tagline);
 
-    const sectionPara = createSection('para')
-    main.appendChild(sectionPara)
+  const orderLink = createLink("order", "Order Now");
+  detailSection.appendChild(orderLink);
 
-    const p = createP('basicInfo', 'Inspired by American Cuisine. Built on the principle that food tastes better in larger quantities.  For the vibrant community of Portland.')
-    sectionPara.appendChild(p)
+  const sectionPara = createSection("para");
+  section.appendChild(sectionPara);
 
+  const p = createP(
+    "basicInfo",
+    "Inspired by American Cuisine. Built on the principle that food tastes better in larger quantities.  For the vibrant community of Portland."
+  );
+  sectionPara.appendChild(p);
 }
 
-export default loadHome
+export default loadHome;

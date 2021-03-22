@@ -16,13 +16,8 @@ function createTabs(id, text) {
   const li = document.createElement("li");
 
   li.setAttribute("id", id);
-
-  const a = document.createElement("a");
-  a.href = "#";
-  a.textContent = text;
-
-  li.appendChild(a);
-
+  li.textContent = text;
+  li.classList.add('tab')
   return li;
 }
 
@@ -30,9 +25,9 @@ function createNav(id) {
   const ul = document.createElement("ul");
   ul.setAttribute("id", id);
 
-  const homeTab = createTabs("home", "Home");
-  const menuTab = createTabs("menu", "Menu");
-  const aboutTab = createTabs("about", "About");
+  const homeTab = createTabs("homeTab", "Home");
+  const menuTab = createTabs("menuTab", "Menu");
+  const aboutTab = createTabs("aboutTab", "About");
 
   ul.appendChild(homeTab);
   ul.appendChild(menuTab);
