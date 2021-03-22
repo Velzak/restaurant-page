@@ -47,6 +47,8 @@ header {
 h1 {
   font-size: 3rem;
   margin: 2rem;
+  color: aliceblue;
+  text-decoration: white;
 }
 
 #nav {
@@ -99,7 +101,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  background: url(/dist/images/background.jpg);
+  background: url(/images/background.jpg);
   background-size: cover;
   height: 120vh;
   width: 100%;
