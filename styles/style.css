@@ -200,6 +200,64 @@ footer {
   border-bottom: 1px solid white;
 }
 
+
+/******************************************
+/* ABOUT TAB
+/*******************************************/
+#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#about #aboutUs{
+  font-size: 32px;
+  font-weight: 500;
+  padding: 3rem;
+}
+
+#aboutDetails{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#aboutDetails img{
+  padding: 0 3rem 3rem 3rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px){
+  #aboutDetails img{
+    padding: 0 3rem 3rem 3rem;
+    max-width: 800px;
+  }
+}
+
+#aboutDetails #aboutPara{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 3rem 3rem 3rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+#about #contactHeading{
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+
+#contact p, #contact a{
+  font-size: 28px;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
