@@ -3,8 +3,6 @@ Created a responsive single page website for a restaurant
 
 **Link to project:** https://arlo-restaurant.netlify.app/
 
-![alt tag]
-
 ## How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript
